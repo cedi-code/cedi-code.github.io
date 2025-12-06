@@ -1,0 +1,33 @@
+<div class="project-card" style="border: 1px solid #ccc; padding: 15px; margin-bottom: 20px;">
+  
+  <h3>{{ project.title }}</h3>
+  
+  {% if project.live_url %}
+    <a href="{{ project.live_url }}" target="_blank" rel="noopener noreferrer">
+      <img src="{{ project.image }}" alt="{{ project.title }} screenshot" style="max-width: 100%; height: auto;">
+    </a>
+  {% else %}
+    <img src="{{ project.image }}" alt="{{ project.title }} screenshot" style="max-width: 100%; height: auto;">
+  {% endif %}
+
+  <div class="project-links" style="margin-top: 10px; margin-bottom: 10px;">
+    {% if project.github_url %}
+      <a href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer" title="View Code on GitHub" style="margin-right: 15px;">
+         GitHub
+      </a>
+    {% endif %}
+
+    {% if project.live_url %}
+      <a href="{{ project.live_url }}" target="_blank" rel="noopener noreferrer" title="Visit Live Page">
+        Visit Page
+      </a>
+    {% endif %}
+  </div>
+
+  <div class="project-description">
+    {{ project.content | markdownify | strip_html | truncatewords: 40 }} 
+    </div>
+  
+  <p><a href="{{ project.url }}">Read more...</a></p>
+
+</div>
