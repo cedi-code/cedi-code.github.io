@@ -2,7 +2,7 @@
 layout: project
 title: WebGL Tutorials :3
 image: /webgl-tutorials/screenshot.png
-github_url: https://github.com/cedi/webgl-tutorials-repo
+github_url: https://github.com/cedi-code/webgl-tutorials
 live_url: /webgl-tutorials/
 ---
 

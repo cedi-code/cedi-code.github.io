@@ -2,7 +2,7 @@
 layout: project
 title: Reaction Diffusion Simulator
 image: /turing-pattern/screenshot.png
-github_url: https://github.com/cedi/reaction-diffusion-repo
+github_url: https://github.com/cedi-code/turing-pattern
 live_url: /turing-pattern/
 ---
 
