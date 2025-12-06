@@ -1,2 +1,4 @@
 theme: jekyll-theme-minimal
-title: cedi's projects
+title: "Cedi's projects"
+description: "webstuff I made"
+show_downloads: false
