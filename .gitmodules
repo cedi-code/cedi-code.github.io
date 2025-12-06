@@ -1,0 +1,6 @@
+[submodule "webgl-tutorials"]
+	path = webgl-tutorials
+	url = git@github.com:cedi-code/webgl-tutorials.git
+[submodule "turing-pattern"]
+	path = turing-pattern
+	url = git@github.com:cedi-code/turing-pattern.git
