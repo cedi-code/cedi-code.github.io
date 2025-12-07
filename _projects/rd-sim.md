@@ -4,7 +4,7 @@ title: Reaction Diffusion Simulator
 image: /turing-pattern/screenshot.png
 github_url: https://github.com/cedi-code/turing-pattern
 live_url: /turing-pattern/
-date: 2025
+date: 2025-07-01
 order: 4
 ---
 
