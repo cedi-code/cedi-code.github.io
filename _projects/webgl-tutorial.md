@@ -4,7 +4,7 @@ title: WebGL Tutorials :3
 image: /webgl-tutorials/screenshot.png
 github_url: https://github.com/cedi-code/webgl-tutorials
 live_url: /webgl-tutorials/
-date: 2025
+date: 2025-06-01
 order: 3
 ---
 
