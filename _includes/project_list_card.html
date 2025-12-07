@@ -32,7 +32,7 @@
 
   <div class="project-rechts" style="text-align: right;">
     {% if project.date %}
-      {{ project.date }} 
+      {{ project.date | date: "%B %Y" }} 
     {% endif %}
   </div>
 
