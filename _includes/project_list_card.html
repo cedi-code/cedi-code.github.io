@@ -12,15 +12,27 @@
 
   <div class="project-links" style="margin-top: 10px; margin-bottom: 10px;">
     {% if project.github_url %}
-      <a href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer" title="View Code on GitHub" style="margin-right: 15px;">
+      <a href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer" title="View on GitHub" style="margin-right: 15px;">
          GitHub
       </a>
     {% endif %}
 
+    {% if project.youtube %}
+      <a href="{{ project.youtube }}" target="_blank" rel="noopener noreferrer" title="Visit youtube">
+        Video
+      </a>
+    {% endif %}
+
     {% if project.live_url %}
-      <a href="{{ project.live_url }}" target="_blank" rel="noopener noreferrer" title="Visit Live Page">
+      <a href="{{ project.live_url }}" target="_blank" rel="noopener noreferrer" title="Visit Page">
         Visit Page
       </a>
+    {% endif %}
+  </div>
+
+  <div class="project-rechts" style="text-align: right;">
+    {% if project.date %}
+      {{ project.date }} 
     {% endif %}
   </div>
 
