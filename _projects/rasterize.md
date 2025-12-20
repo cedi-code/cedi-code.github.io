@@ -2,7 +2,7 @@
 layout: project
 title: Rasterizer Algorithm Explanation
 image: /thumbnails/youtube_rasterizer.webp
-youtube: https://youtu.be/t7Ztio8cwqM?si=qMSxhGlQQs0ESy0P
+live_url: https://youtu.be/t7Ztio8cwqM?si=qMSxhGlQQs0ESy0P
 date: 2019-11-01
 order: 2
 ---

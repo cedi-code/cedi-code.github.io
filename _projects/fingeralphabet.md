@@ -3,7 +3,7 @@ layout: project
 title: VR Fingeralphabet trainer
 image: /thumbnails/fingeralphabet.jpeg
 github_url: https://github.com/cpvrlab/vrTrainingFingerAlphabet
-youtube: https://youtu.be/Ahs1l0INA-w?si=KUqI6xoHWV-VkyAp
+live_url: https://youtu.be/Ahs1l0INA-w?si=KUqI6xoHWV-VkyAp
 date: 2020-03-01
 order: 1
 ---
