@@ -4,3 +4,6 @@
 [submodule "turing-pattern"]
 	path = turing-pattern
 	url = git@github.com:cedi-code/turing-pattern.git
+[submodule "webgpu2dsplatting"]
+	path = webgpu2dsplatting
+	url = https://github.com/cedi-code/webgpu2dsplatting.git
