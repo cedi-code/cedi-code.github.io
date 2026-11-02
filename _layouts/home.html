@@ -1,0 +1,24 @@
+---
+layout: scaffold
+widgets:
+  - colophon
+  - related_sites
+  - share
+  - global_cmt
+---
+
+<div id="midComp" class="midMulRow mid-content noScrollbar fixedCont" style="--tile-first-height: 28rem; --tile-rest-height: 20rem;">
+    <div id="midContTop"></div>
+    {%- assign posts = site.posts | concat: site.projects | sort: 'order' | reverse -%}
+    {%- for item in posts -%}
+        {% if item != nil and item.properties contains "pinned" %}
+            {% include postPrev.html %}
+        {% endif %}
+    {%- endfor -%}
+
+    {%- for item in posts -%}
+        {% unless item == nil or item.properties contains "pinned" %}
+            {% include postPrev.html %}
+        {% endunless %}
+    {%- endfor -%}
+</div>
