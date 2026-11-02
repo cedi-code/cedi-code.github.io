@@ -1,6 +1,7 @@
 title: "Cedi's projects"
 description: "webstuff I made"
 show_downloads: false
+remote_theme: SdtElectronics/jekyll-theme-antarctica
 collections:
   projects:
     output: true  
