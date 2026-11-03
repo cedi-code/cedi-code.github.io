@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+{% include back_link.html %}
+
+<article>
+    <p class="post-meta">
+        <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time>
+    </p>
+
+    <h1>{{ page.title }}</h1>
+
+    {% if page.eyeCatcher %}
+    <p>
+        <img src="{{ page.eyeCatcher | relative_url }}" alt="{{ page.title }} preview" loading="lazy">
+    </p>
+    {% endif %}
+
+    <p>
+        {% if page.github_url %}<a href="{{ page.github_url }}">GitHub</a>{% endif %}
+        {% if page.github_url and page.live_url %} · {% endif %}
+        {% if page.live_url %}<a href="{{ page.live_url }}">Live project</a>{% endif %}
+    </p>
+
+    {% if page.tags %}
+    <p>Tags: {{ page.tags | join: ", " }}</p>
+    {% endif %}
+
+    {{ content }}
+</article>

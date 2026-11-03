@@ -1,0 +1,8 @@
+entries:
+  - title: about
+    entries:
+      - title: "I make interactive graphics, simulations, and web experiments."
+  - title: contacts
+    entries:
+      - title: GitHub
+        url: https://github.com/cedi-code

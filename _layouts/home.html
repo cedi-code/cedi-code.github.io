@@ -1,23 +1,90 @@
 ---
-layout: scaffold
-widgets:
-  - about
-  - contacts
-  - theme
+layout: default
 ---
 
-<div id="midComp" class="midMulRow mid-content noScrollbar fixedCont" style="--tile-first-height: 28rem; --tile-rest-height: 20rem;">
-    <div id="midContTop"></div>
-    {%- assign posts = site.posts | concat: site.projects | sort: 'order' | reverse -%}
-    {%- for item in posts -%}
-        {% if item != nil and item.properties contains "pinned" %}
-            {% include postPrev.html %}
-        {% endif %}
-    {%- endfor -%}
+<header>
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+</header>
 
-    {%- for item in posts -%}
-        {% unless item == nil or item.properties contains "pinned" %}
-            {% include postPrev.html %}
-        {% endunless %}
-    {%- endfor -%}
-</div>
+{% include menu_item.html collection=site.data.menu.entries %}
+
+<h2>Projects</h2>
+
+<style>
+    body {
+        position: relative;
+        background: #000;
+        color: #fff;
+        filter: none !important;
+    }
+
+    body img,
+    body[a="auto"] img,
+    body[a="dark"] img {
+        filter: none !important;
+    }
+
+    body a {
+        color: #fff;
+    }
+
+    body::before {
+        position: fixed;
+        z-index: 0;
+        inset: 0;
+        background-image: var(--project-preview-image, none);
+        background-position: center;
+        background-size: cover;
+        content: "";
+        opacity: 0.5;
+        pointer-events: none;
+    }
+
+    .page-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .project-link {
+        position: relative;
+    }
+</style>
+
+{% assign sorted_projects = site.projects | sort: "order" | reverse %}
+<ul>
+    {% for project in sorted_projects %}
+    <li>
+        <a class="project-link" href="{{ project.url | relative_url }}"
+            {% if project.eyeCatcher %}data-preview="{{ project.eyeCatcher | relative_url }}"{% endif %}>
+            {{ project.title }}
+        </a>
+        {% if project.tags %} — {{ project.tags | join: ", " }}{% endif %}
+    </li>
+    {% endfor %}
+</ul>
+
+{{ content }}
+
+<script>
+    const pageBody = document.body;
+    const projectLinks = document.querySelectorAll('.project-link[data-preview]');
+
+    const showPreview = (link) => {
+        pageBody.style.setProperty(
+            '--project-preview-image',
+            `url(${JSON.stringify(link.dataset.preview)})`
+        );
+    };
+
+    const hidePreview = () => {
+        pageBody.style.removeProperty('--project-preview-image');
+    };
+
+    projectLinks.forEach((link) => {
+        link.addEventListener('mouseenter', () => showPreview(link));
+        link.addEventListener('mouseleave', hidePreview);
+        link.addEventListener('focus', () => showPreview(link));
+        link.addEventListener('blur', hidePreview);
+    });
+</script>

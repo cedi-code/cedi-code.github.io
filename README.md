@@ -1,10 +1,5 @@
 # cedi-code
-List of projects I made.
 
-{% assign sorted_projects = site.projects | sort: "order" | reverse %}
+Interactive graphics, simulations, and web experiments by cedi-code.
 
-{% for project in sorted_projects %}
-  
-  {% include project_list_card.html project=project %}
-
-{% endfor %}
+The portfolio is built with [no-style-please](https://github.com/riggraz/no-style-please).
