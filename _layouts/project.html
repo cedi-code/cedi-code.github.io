@@ -18,9 +18,19 @@ layout: default
     {% endif %}
 
     <p>
-        {% if page.github_url %}<a href="{{ page.github_url }}">GitHub</a>{% endif %}
-        {% if page.github_url and page.live_url %} · {% endif %}
-        {% if page.live_url %}<a href="{{ page.live_url }}">Live project</a>{% endif %}
+        {% assign has_link = false %}
+        {% if page.github_url %}<a href="{{ page.github_url }}" target="_blank" rel="noopener noreferrer">GitHub</a>{% assign has_link = true %}{% endif %}
+        {% if page.live_url %}
+            {% if has_link %} · {% endif %}<a href="{{ page.live_url }}" target="_blank" rel="noopener noreferrer">Live project</a>
+            {% assign has_link = true %}
+        {% endif %}
+        {% if page.youtube %}
+            {% if has_link %} · {% endif %}<a href="{{ page.youtube }}" target="_blank" rel="noopener noreferrer">YouTube</a>
+            {% assign has_link = true %}
+        {% endif %}
+        {% if page.blog_url %}
+            {% if has_link %} · {% endif %}<a href="{{ page.blog_url }}" target="_blank" rel="noopener noreferrer">Blog</a>
+        {% endif %}
     </p>
 
     {% if page.tags %}

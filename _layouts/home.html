@@ -55,7 +55,7 @@ layout: default
 <ul>
     {% for project in sorted_projects %}
     <li>
-        <a class="project-link" href="{{ project.url | relative_url }}"
+        <a class="project-link" href="{{ project.url | relative_url }}" target="_blank" rel="noopener noreferrer"
             {% if project.eyeCatcher %}data-preview="{{ project.eyeCatcher | relative_url }}"{% endif %}>
             {{ project.title }}
         </a>

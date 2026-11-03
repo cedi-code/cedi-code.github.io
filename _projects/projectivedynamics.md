@@ -3,7 +3,7 @@ layout: project
 title: Projective Dynamics & Snoopy
 eyeCatcher: /assets/gifs/snoopy.gif
 github_url: https://github.com/cedi-code/projective-dynamics-snoopy
-live_url: https://youtu.be/nbY2rH6XrAs?si=tnOr5u9Rd72f8YvI
+youtube: https://youtu.be/nbY2rH6XrAs?si=tnOr5u9Rd72f8YvI
 date: 2025-12-01
 order: 5
 tags: simulation c++ video

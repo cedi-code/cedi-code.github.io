@@ -4,6 +4,7 @@ title: WebGPU 2d gaussian splater
 eyeCatcher: /assets/gifs/gs2d.gif
 github_url: https://github.com/cedi-code/webgpu2dsplatting
 live_url: /webgpu2dsplatting/
+blog_url: https://cedi-code.github.io/webgpu2dsplatting/journey-primitive.html
 date: 2026-09-01
 order: 6
 tags: WebGPU simulation Web

@@ -1,7 +1,7 @@
 ---
 layout: project
 title: WebGL Tutorials :3
-eyeCatcher: /assets/gifs/webgltuto.gif
+eyeCatcher: /assets/gifs/webglTuto.gif
 github_url: https://github.com/cedi-code/webgl-tutorials
 live_url: /webgl-tutorials/
 date: 2025-06-01
