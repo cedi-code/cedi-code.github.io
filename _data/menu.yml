@@ -1,8 +1,10 @@
 entries:
   - title: about
     entries:
-      - title: "I make interactive graphics, simulations, and web experiments."
+      - title: "Currently a Visual Computing Master's student at ETH Zürich. My favourite drink is 高山绿茶 and I like hiking"
   - title: contacts
     entries:
       - title: GitHub
         url: https://github.com/cedi-code
+      - title: CV
+        url: /assets/files/Cedric_Girardin_Basic_Resume_Sep26.pdf
