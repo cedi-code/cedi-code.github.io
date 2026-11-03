@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Reaction Diffusion Simulator
-eyeCatcher: /turing-pattern/screenshot.png
+eyeCatcher: /assets/gifs/rdSim.gif
 github_url: https://github.com/cedi-code/turing-pattern
 live_url: /turing-pattern/
 date: 2025-07-01

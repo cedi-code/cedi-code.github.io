@@ -1,7 +1,7 @@
 ---
 layout: project
 title: VR Fingeralphabet trainer
-eyeCatcher: /thumbnails/fingeralphabet.jpeg
+eyeCatcher: /assets/gifs/vralphabet.gif
 github_url: https://github.com/cpvrlab/vrTrainingFingerAlphabet
 live_url: https://youtu.be/Ahs1l0INA-w?si=KUqI6xoHWV-VkyAp
 date: 2020-03-01
