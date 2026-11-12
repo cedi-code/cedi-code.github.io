@@ -1,0 +1,16 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Not found</title>
+<script>
+  const oldBase = '/webgpu2dsplatting/';
+  const newBase = '/webgpu-img2splat/'; // use whatever your final repo name is
+  const { pathname, search, hash } = location;
+
+  if (pathname === oldBase.slice(0, -1) || pathname.startsWith(oldBase)) {
+    const rest = pathname.slice(oldBase.length);
+    location.replace(newBase + rest + search + hash);
+  }
+</script>
+
+<p>I got lost, page not found. <a href="/">Back to cedi-code</a></p>
+<img src="assets/imgs/snoopy_PNG8.png" />
